@@ -1,16 +1,25 @@
 # Parking-Radar-with-Arduino
-## Descrption
-This project is a simple parking assistant using an HC-SR04 ultrasonic sensor, a LED pin and a buzzer (Piezo Buzzer) with an Arduino Nano.
-The system detects obstackes and alerts the driver with sound and light signals depending on the distance.
 
-## Components:
-- Arduino Nano
--HC-SR04 Ultrasonic Sensor
--Piezzo Buzzer
--LED pin
--Resistor 
+## Description  
+This project is a simple parking assistant using an HC-SR04 ultrasonic sensor, a piezo buzzer, and an LED, all controlled by an Arduino Nano.  
+The system measures the distance to nearby obstacles and alerts the driver using sound and light signals based on how close the object is.
 
-## A schematic is available in the Schematics/ file.
+## Components  
+- Arduino Nano  
+- HC-SR04 Ultrasonic Sensor  
+- Piezo Buzzer  
+- LED  
+- Resistor (for LED)  
+- Breadboard  
+- Jumper wires  
 
-## Code
-The code is available in the code/ folder. when the obstacle is at a distance of 15 centimeters, the LED pin will turn on & the Buzzer will beep, between 15 and 30 centimeters, only the buzzer will beep at a different tone.
+## How It Works  
+- When an object is **closer than 15 cm**, the LED turns on and the buzzer emits a **high-pitched tone**.  
+- When the object is **between 15 cm and 30 cm**, only the buzzer sounds with a **lower-pitched tone**.  
+- When the object is **further than 30 cm**, both the LED and buzzer are off.
+
+## Circuit Diagram  
+A schematic is available in the `Schematics/` folder.
+
+## Code  
+The Arduino code is available in the `code/` folder. Here's the main program:
